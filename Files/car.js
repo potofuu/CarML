@@ -14,6 +14,10 @@ class Car {
     }
 
     update() {
+        this.#move();
+    }
+
+    #move() {
         if (this.controls.forward) {
             this.vel += this.acceleration;
         }
@@ -36,7 +40,7 @@ class Car {
             this.vel = 0;
         }
         if (this.speed != 0) {
-            const flip = this.vel > 0 ? 1:-1;
+            const flip = this.vel >= 0 ? 1:-1;
             if (this.controls.left) {
                 this.angle += 0.03 * flip;
             }
