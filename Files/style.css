@@ -1,0 +1,10 @@
+body {
+    margin: 0;
+    background-color: floralwhite;
+    overflow: hidden;
+    text-align: center;
+}
+
+#myCanvas {
+    background-color: aliceblue;
+}
